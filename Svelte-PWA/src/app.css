@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@layer components {
+    .offline-banner {
+        background-color: #e74c3c;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+}

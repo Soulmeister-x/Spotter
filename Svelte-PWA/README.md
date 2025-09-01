@@ -1,7 +1,5 @@
 # Spotter
 
-![Spotter Icon](./Svelte-PWA/static/Spotter-icon.png)
-
 Spotter ist eine Progressive Web App (PWA), die entwickelt wurde, um GPS-Koordinaten auch ohne aktive Internetverbindung zu erfassen. Die App speichert die erfassten Geodaten lokal und synchronisiert sie automatisch mit einer vom Nutzer ausgewählten Google Maps-Liste, sobald eine Internetverbindung verfügbar ist. Durch die PWA-Technologie kann die App direkt aus dem Browser auf Desktops und mobilen Geräten installiert werden und bietet eine nahtlose, native App-ähnliche Erfahrung.
 
 ## Use Cases

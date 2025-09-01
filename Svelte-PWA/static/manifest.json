@@ -1,0 +1,27 @@
+{
+    "name": "Spotter",
+    "short_name": "Spotter",
+    "start_url": "/",
+    "id": "Spotter/v1",
+    "description": "A PWA to capture GPS coordinates offline.",
+    "theme_color": "#3498db",
+    "background_color": "#3498db",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "pwa-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
