@@ -3,8 +3,6 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import { defineConfig } from 'vite';
 
-//navigator.serviceWorker.register('/service-worker.js')
-
 export default defineConfig({
 	plugins: [
 		tailwindcss(),
@@ -16,5 +14,9 @@ export default defineConfig({
 	},
 	preview: {
 		allowedHosts: ['buck-fine-randomly.ngrok-free.app']
+	},
+	build: {
+		outDir: 'dist',
+		emptyOutDir: true
 	}
 });

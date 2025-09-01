@@ -1,0 +1,14 @@
+services:
+  spotter-pwa-service:
+    build:
+      context: ./Svelte-PWA
+    container_name: spotter-pwa-service
+    restart: unless-stopped
+    ports:
+      - "8484:80"
+    networks:
+      - proxiable
+
+networks:
+  proxiable:
+    external: true
