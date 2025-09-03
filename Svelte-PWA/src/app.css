@@ -1,15 +1,18 @@
 @import 'tailwindcss';
 
 @layer components {
-    .offline-banner {
-        background-color: #e74c3c;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
+    .online-indicator {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 8px;
+    }
+
+    .online-indicator.online {
+        background-color: #2ecc71; /* green */
+    }
+
+    .online-indicator.offline {
+        background-color: #e74c3c; /* red */
     }
 }

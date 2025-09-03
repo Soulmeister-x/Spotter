@@ -24,30 +24,34 @@
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">
-	{#if !online}
-		<div class="offline-banner">You are currently offline.</div>
-	{/if}
 	<main class="flex-grow p-4">
 		{@render children?.()}
 	</main>
 
+	<div class="absolute right-4 top-4 flex flex-row items-center justify-between">
+		<span>{online ? 'online' : 'offline'}</span>
+		<span class="online-indicator {online ? 'online' : 'offline'}"></span>
+	</div>
+
 	<nav class="fixed inset-x-0 bottom-0 border-t bg-white shadow-lg">
 		<div class="flex justify-around">
-			<a href="/" class="p-4 text-center text-gray-700 hover:bg-gray-100">
-				<!-- Replace with an icon later -->
-				<span>Home</span>
+			<a
+				href="/locations"
+				class="flex items-center gap-2 p-4 text-center text-gray-700 hover:bg-gray-100"
+			>
+				<iconify-icon icon="heroicons:map-solid" class="text-2xl"></iconify-icon>
+				Locations
 			</a>
-			<a href="/locations" class="p-4 text-center text-gray-700 hover:bg-gray-100">
-				<!-- Replace with an icon later -->
-				<span>Locations</span>
+			<a href="/" class="flex items-center gap-2 p-4 text-center text-gray-700 hover:bg-gray-100">
+				<iconify-icon icon="heroicons:home-solid" class="text-2xl"></iconify-icon>
+				Home
 			</a>
-			<a href="/sync" class="p-4 text-center text-gray-700 hover:bg-gray-100">
-				<!-- Replace with an icon later -->
-				<span>Sync</span>
-			</a>
-			<a href="/profile" class="p-4 text-center text-gray-700 hover:bg-gray-100">
-				<!-- Replace with an icon later -->
-				<span>Profile</span>
+			<a
+				href="/profile"
+				class="flex items-center gap-2 p-4 text-center text-gray-700 hover:bg-gray-100"
+			>
+				<iconify-icon icon="heroicons:user-solid" class="text-2xl"></iconify-icon>
+				Profile
 			</a>
 		</div>
 	</nav>
